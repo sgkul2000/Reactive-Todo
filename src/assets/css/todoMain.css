@@ -1,0 +1,142 @@
+.todoWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.todoItem{
+    list-style: none;
+}
+
+ul.todoItemList{
+    margin: 0;
+    padding: 0;
+}
+
+li.todoItem{
+    margin: 1rem auto;
+    cursor: pointer;
+    list-style: circle;
+    position: relative;
+}
+li.todoItem.done{
+    list-style: disc;
+    text-decoration: line-through;
+}
+
+
+.inputWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgba(255,255,255, 0.1);
+    border-radius: 6px;
+    padding: 0 0 0 1rem;
+    margin: 0.8rem auto;
+}
+
+button{
+    outline: none;
+    transition: all 0.3s ease;
+    border: none;
+}
+button.btn{
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+button:active{
+    border: none;
+    outline: none;
+}
+
+button.btn:hover {
+    background-color: rgba(255,255,255, 0.1);
+}
+
+button.addBtn {
+    /* min-width: 100% !important; */
+    padding: 0.7rem 2rem;
+    border-radius: 6px;
+    opacity: 0.4;
+    margin: 0rem auto;
+}
+
+button.addBtn:hover{
+    opacity: 1;
+}
+
+button.deleteBtn {
+    display: none;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+button.googleBtn{
+    margin: 2rem auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid #4285f4;
+    background-color: #4285f4;
+    color: white;
+    font-weight: 600;
+}
+button.googleBtn > div.imgWrapper{
+    padding: 1rem;
+    background-color: white;
+}
+button.googleBtn > span.googleBtnTitle{
+    background-color: #4285f4;
+    padding: 1rem;
+}
+
+button.googleBtn:hover {
+    box-shadow: 0 0 6px #4285f4;
+}
+
+li.todoItem.done > button.deleteBtn{
+    display: block;
+}
+li.todoItem:hover > button.deleteBtn {
+    opacity: 0.4;
+}
+
+li.todoItem:hover > button.deleteBtn {
+    opacity: 1;
+}
+
+
+
+button.doneBtn{
+    font-size: 0.8rem;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 0.7rem;
+    cursor: pointer;
+    
+}
+
+
+input#newTodoInput{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1rem;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+
+}
